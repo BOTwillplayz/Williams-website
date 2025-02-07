@@ -6,10 +6,84 @@ img {
   }
   body {
     text-align: center;
-    font-family: 'Indie Flower';
-    background: lightskyblue;
-    color: lightcoral;
+    font-family: 'Jersey 10';
+    background: black;
+    color: mediumpurple;
   }
   p {
     font-size: 2em;
+  }
+  body {
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Jersey 15'
+    }
+  }
+  h1 {
+    font-size: 96px;
+  }
+  .carousel {
+    width: 100%; /* Full width */
+    overflow: hidden; /* Hide overflowing images */
+    white-space: nowrap;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 10px;
+    animation: scroll 10s linear infinite; /* Auto-slide */
+    width: max-content; /* Ensures content doesn't wrap */
+}
+
+.carousel img {
+    width: 200px; /* Set size */
+    height: auto;
+    border-radius: 10px;
+}
+
+@keyframes scroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); } /* Moves images left */
+
+
+    body {
+      font-family: 'Jersey 10';
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: black;
+      flex-direction: column;
+  }
+  
+  }
+  
+  .btn {
+      display: inline-block;
+      padding: 20px 60px;  
+      font-size: 24px;  
+      font-weight: bold;
+      text-decoration: none;
+      text-align: center;
+      color: mediumpurple;
+      background-color: black;
+      border-radius: 12px;
+      border: 2px solid white;
+      transition: transform 0.2s, background-color 0.2s;
+  }
+  
+  .youtube {
+      background-color: #FF0000;
+  }
+  
+  .github {
+      background-color: #24292e;
+  }
+  
+  .spotify {
+      background-color: #1DB954;
+  }
+  
+  .btn:hover {
+      transform: scale(1.1);
+      opacity: 0.8;
   }
